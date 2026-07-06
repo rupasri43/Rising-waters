@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌊 Flood Prediction</h1>
+
+    <p>Enter the weather and rainfall details below.</p>
+
+    <form action="/predict" method="POST">
+
+<h2>🌡 Weather Parameters</h2>
+
+<div class="row">
+
+<div class="column">
+<label>Temperature (°C)</label>
+<input type="number" name="Temp" step="any" required>
+</div>
+
+<div class="column">
+<label>Humidity (%)</label>
+<input type="number" name="Humidity" step="any" required>
+</div>
+
+<div class="column">
+<label>Cloud Cover (%)</label>
+<input type="number" name="Cloud_Cover" step="any" required>
+</div>
+
+<div class="column">
+<label>Average June Rainfall</label>
+<input type="number" name="avgjune" step="any" required>
+</div>
+
+<div class="column">
+<label>Sub Rainfall</label>
+<input type="number" name="sub" step="any" required>
+</div>
+
+</div>
+
+<h2>🌧 Rainfall Parameters</h2>
+
+<div class="row">
+
+<div class="column">
+<label>Annual Rainfall</label>
+<input type="number" name="ANNUAL" step="any" required>
+</div>
+
+<div class="column">
+<label>Jan-Feb Rainfall</label>
+<input type="number" name="Jan_Feb" step="any" required>
+</div>
+
+<div class="column">
+<label>Mar-May Rainfall</label>
+<input type="number" name="Mar_May" step="any" required>
+</div>
+
+<div class="column">
+<label>Jun-Sep Rainfall</label>
+<input type="number" name="Jun_Sep" step="any" required>
+</div>
+
+<div class="column">
+<label>Oct-Dec Rainfall</label>
+<input type="number" name="Oct_Dec" step="any" required>
+</div>
+
+</div>
+
+<input type="submit" value="🌊 Predict Flood">
+
+</form>
+
+</div>
+
+</body>
+</html>

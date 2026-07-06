@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flood Prediction Result</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/414/414974.png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🌊 Prediction Result</h1>
+
+    <div class="success">
+        ✅ No Chance of Flood
+    </div>
+
+    <br>
+
+    <p>
+        The machine learning model predicts that there is a
+        <b>very low probability of flooding</b> based on the weather
+        and rainfall values you entered.
+    </p>
+
+    <hr><br>
+
+    <h3>✅ Good News!</h3>
+
+    <p>
+        ✔ Current conditions appear safe.<br>
+        ✔ Continue monitoring weather forecasts.<br>
+        ✔ Stay informed during heavy rainfall seasons.<br>
+        ✔ Recheck predictions if weather conditions change.
+    </p>
+
+    <br>
+
+    <a href="/predict_page">
+        <button>🔄 Predict Again</button>
+    </a>
+
+    <br><br>
+
+    <a href="/">
+        <button>🏠 Home</button>
+    </a>
+
+</div>
+
+</body>
+</html>

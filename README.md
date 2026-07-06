@@ -61,7 +61,7 @@ Flood-Prediction-System/
 1. Clone the repository
 
 ```bash
-git clone https://github.com/rupasri43/Rising waters.git
+git clone https://github.com/rupasri43/Rising-waters.git
 ```
 
 2. Install the required libraries
